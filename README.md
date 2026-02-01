@@ -5,13 +5,13 @@ A Raspberry Pi based Flask app with html, providing a webpage with Login, Pi Dat
 
 # ⚡ IoT Pi Dashboard
 
-A bespoke, Matrix-inspired Raspberry Pi gpio controller with add-ons. This isn't just a relay switcher; it's a mission-control center for your home, featuring real-time system diagnostics and a heating timer. I personally wire this heating relay in parallel with a simple volt free thermostat on my combi boiler and have added the timer as when the relay is active it supercedes the room thermostat. 
+Matrix-inspired Raspberry Pi gpio controller with add-ons. Featuring real-time system diagnostics and a heating timer. I personally wire this heating relay in parallel with a simple volt free thermostat on my combi boiler and have added the timer as when the relay is active it supercedes the room thermostat. 
 
 ## 🌟 Features
 
 - **Matrix Aesthetic**: 
 - **Heating Timer**: Heating relay includes a 60-minute hardware-software failsafe. If you turn the heating on remotely and forget, the Pi kills the relay after one hour to prevent thermostat conflicts.
-- **Live System Vitals**: Real-time monitoring of CPU Temperature, System Load, Disk Usage, and Voltage Stability (Throttling check).
+- **Live Pi Vitals**: Real-time monitoring of CPU Temperature, System Load, Disk Usage, and Voltage Stability (Throttling check).
 - **World Clocks**: London, New York, and Tokyo time-syncing.
 
 
@@ -74,6 +74,5 @@ MIT License - Free to use, tweak, and share.
 
 
 
-**Is there anything else you need before you go live with the "Zoe Paul Home" System Control v2.0?**
 
 ```
