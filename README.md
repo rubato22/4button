@@ -59,11 +59,22 @@ source env/bin/activate
 pip install 
 pip install flask RPi.GPIO python-dotenv
 
+### 🔐 Security Setup (.env)
+This app uses a `.env` file to keep your passwords secure and out of the code. 
+Create a file named `.env` in the project folder and add your credentials:
+```text
+FLASK_SECRET_KEY=change_this_to_a_random_string
+DASHBOARD_PASSWORD=your_custom_password
 
 **Run the app**:
 python3 app.py
 
-
+### ⚙️ Port Configuration
+By default, the app binds to `0.0.0.0` (making it accessible across your local network) on port `5055`. 
+If you need to change the port to avoid conflicts with other apps, edit the very bottom of `app.py`:
+```python
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5055) # Change 5055 to your desired port
 
 Access the dashboard at `http://your-pi-ip:5055`
 
