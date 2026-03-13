@@ -114,4 +114,4 @@ def system_shutdown():
     return "<h1>Shutting Down...</h1><p>Wait for the green light to stop blinking before pulling power.</p>"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5056)
+    app.run(host='0.0.0.0', port=5055)
