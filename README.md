@@ -56,7 +56,7 @@ source env/bin/activate
    
 
 **Install dependencies**:
-pip install 
+
 pip install flask RPi.GPIO python-dotenv
 
 ### 🔐 Security Setup (.env)
